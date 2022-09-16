@@ -14,7 +14,7 @@ test.skip('Test case 01 - Should check the user registration with valid data', a
     await registerPage.checkSuccessMessage();                                                           // Checks the validation success message
 });
 
-test('Test case 02 - Should check the user registration with invalid data', async ({page}) => {
+test.skip('Test case 02 - Should check the user registration with invalid data', async ({page}) => {
     const homePage = new HomePage(page);
     const registerPage = new RegisterPage(page);
     await homePage.openRegisterPage();                                                                  // Opens registration page
@@ -23,7 +23,7 @@ test('Test case 02 - Should check the user registration with invalid data', asyn
     await registerPage.checkErrorMessages();                                                            // Checks the validation error messages
 });
 
-test('Test case 03 - Should check the user login with valid data', async ({page}) => {
+test.skip('Test case 03 - Should check the user login with valid data', async ({page}) => {
     const homePage = new HomePage(page);
     const loginPage = new LoginPage(page);
     await homePage.openLoginPage();                                                                     // Opens log in page
@@ -32,7 +32,7 @@ test('Test case 03 - Should check the user login with valid data', async ({page}
     await homePage.checkActiveUsername();                                                               // Checks the logged username
 });
 
-test('Test case 04 - Should check the user login with invalid data', async ({page}) => {
+test.skip('Test case 04 - Should check the user login with invalid data', async ({page}) => {
     const homePage = new HomePage(page);
     const loginPage = new LoginPage(page);
     await homePage.openLoginPage();                                                                     // Opens log in page
