@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Sep 16 10:16:19 UTC 2022","Fri Sep 16 10:16:25 UTC 2022","5898","chromium","tests.spec.js","","","","Test case 02 - Should check the user registration with invalid data",""
+"passed","Fri Sep 16 10:16:29 UTC 2022","Fri Sep 16 10:16:34 UTC 2022","5168","chromium","tests.spec.js","","","","Test case 04 - Should check the user login with invalid data",""
+"passed","Fri Sep 16 10:16:25 UTC 2022","Fri Sep 16 10:16:29 UTC 2022","3907","chromium","tests.spec.js","","","","Test case 03 - Should check the user login with valid data",""
+"passed","Fri Sep 16 10:16:34 UTC 2022","Fri Sep 16 10:16:40 UTC 2022","5192","chromium","tests.spec.js","","","","Test case 05 - Should check the First name for registered user",""
+"skipped","Fri Sep 16 10:16:19 UTC 2022","Fri Sep 16 10:16:19 UTC 2022","1","chromium","tests.spec.js","","","","Test case 01 - Should check the user registration with valid data",""
