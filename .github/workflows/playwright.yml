@@ -30,7 +30,7 @@ jobs:
       run: npx playwright test --reporter=line,allure-playwright
     - name: Generate report
       if: always()
-      run: cp -r $(pwd)/gh-pages/history/. $(pwd)/allure-results/history || true && npx allure generate allure-results -o allure-report --clean
+      run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npx allure generate allure-results -o allure-report --clean
 
 
 
@@ -50,5 +50,5 @@ jobs:
         # ACCES_TPKEN:
         branch: main
         folder: allure-report
-        target-folder: gh-pages
+        target-folder: docs
            
