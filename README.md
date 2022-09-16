@@ -38,4 +38,9 @@
     3.9. Copy this project "pages" and "tests" folders to the root of your created on the 3.1. step folder
 4. To run tests and create allure report:
     4.1. Run the "**npm run test:reporter**" command for run test
-    4.2. Run the "**npm run allure-report**" command for create and open allure report                    
+    4.2. Run the "**npm run allure-report**" command for create and open allure report 
+
+---------------------------------------------------------------------------------------
+##### **To see reports remotely without installation and files download**
+
+Go to this link: https://doktorgonza21.github.io/playwright_demo/
