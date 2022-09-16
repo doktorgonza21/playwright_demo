@@ -1,0 +1,54 @@
+name: Playwright Tests
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      # if: always()
+      # continue-on-error: true
+      # with:
+      #   ref: gh-pages
+      #   path: gh-pages
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+    - name: Install dependencies
+      run: npm ci
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps
+    - name: Install allure
+      run: npm i -D @playwright/test allure-playwright
+    - name: Install allure command line
+      run: npm i allure-commandline        
+    - name: Run Playwright tests
+      run: npx playwright test --reporter=line,allure-playwright
+    - name: Generate report
+      if: always()
+      run: cp -r $(pwd)/gh-pages/history/. $(pwd)/allure-results/history || true && npx allure generate allure-results -o allure-report --clean
+
+
+
+    # 
+    # - name: Open allure report
+    #   run: npx allure open allure-report     
+    - uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: allure-report
+        path: allure-report
+        retention-days: 30
+    - name: Upload report
+      uses: JamesIves/github-pages-deploy-action@v4
+      if: always()
+      with:
+        # ACCES_TPKEN:
+        branch: main
+        folder: allure-report
+        target-folder: gh-pages
+           
