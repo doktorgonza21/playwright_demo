@@ -22,7 +22,6 @@
 
 ---------------------------------------------------------------------------------------
 ##### **To see reports remotely without installation and files download**
-
 Go to this link: https://doktorgonza21.github.io/playwright_demo/
 
 
