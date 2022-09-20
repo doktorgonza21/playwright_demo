@@ -16,8 +16,8 @@
 3. Download and install java for Allure from "https://www.java.com/download/ie_manual.jsp"
 4. Using Visual Studio Code install and configure your workspace
 5. Clone this repository
-6. To run tests and create allure report:
-    6.1. Run the "**npm run test:reporter**" command for run test
+6. To run tests and create allure report:<br>
+    6.1. Run the "**npm run test:reporter**" command for run test<br>
     6.2. Run the "**npm run allure-report**" command for create and open allure report 
 
 ---------------------------------------------------------------------------------------
