@@ -32,7 +32,7 @@ test.skip('Test case 03 - Should check the user login with valid data', async ({
     await homePage.checkActiveUsername();                                                               // Checks the logged username
 });
 
-test.skip('Test case 04 - Should check the user login with invalid data', async ({page}) => {
+test('Test case 04 - Should check the user login with invalid data', async ({page}) => {
     const homePage = new HomePage(page);
     const loginPage = new LoginPage(page);
     await homePage.openLoginPage();                                                                     // Opens log in page
